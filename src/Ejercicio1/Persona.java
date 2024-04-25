@@ -1,20 +1,23 @@
 package Ejercicio1;
 
 public abstract class Persona {
+    protected int dni;
+    protected String nombre;
 
-    int dni;
-    String nombre;
+    // Getters y Setters
+    public int getDni() {
+        return dni;
+    }
+
+    public void setDni(int dni) {
+        this.dni = dni;
+    }
 
     public String getNombre() {
-        return this.nombre;
+        return nombre;
     }
 
-    public int getDni() {
-        return this.dni;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
-
-    public void finalize() throws Throwable {
-
-    }
-
 }

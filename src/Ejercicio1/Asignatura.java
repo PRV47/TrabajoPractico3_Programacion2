@@ -1,28 +1,11 @@
 package Ejercicio1;
 
-import java.util.List;
-
 public class Asignatura {
-
-    int aula;
-    String hora;
-    String nombre;
-    Profesor profesor;
-    Grupo grupo;
-    List<Alumno> alumnos;
-
-    public Asignatura(int aula, String hora, String nombre, Profesor profesor, Grupo grupo, List<Alumno> alumnos) {
-        this.aula = aula;
-        this.hora = hora;
-        this.nombre = nombre;
-        this.profesor = profesor;
-        this.grupo = grupo;
-        this.alumnos = alumnos;
-    }
-
-    public Asignatura() {
-
-    }
+    private int aula;
+    private String hora;
+    private String nombre;
+    private Profesor profesor;
+    private Grupo grupo;
 
     public int getAula() {
         return aula;
@@ -63,18 +46,4 @@ public class Asignatura {
     public void setGrupo(Grupo grupo) {
         this.grupo = grupo;
     }
-
-    public List<Alumno> getAlumnos() {
-        return alumnos;
-    }
-
-    public void setAlumnos(List<Alumno> alumnos) {
-        this.alumnos = alumnos;
-    }
-
-
-    public void finalize() throws Throwable {
-
-    }
-
 }

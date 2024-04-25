@@ -1,22 +1,13 @@
 package Ejercicio1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Profesor extends Persona {
+    private String departamento;
 
-    String departamento;
-    List<Asignatura> asignaturas;
-
-    public List<Asignatura> getAsignaturas() {
-        return this.asignaturas;
+    public String getDepartamento() {
+        return departamento;
     }
 
-    public Profesor() {
-        this.asignaturas = new ArrayList<>();
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
     }
-    public void finalize() throws Throwable {
-        super.finalize();
-    }
-
 }

@@ -3,19 +3,13 @@ package Ejercicio1;
 import java.util.List;
 
 public class Alumno extends Persona {
-    List<Asignatura> asignaturas;
+    private List<Grupo> grupos;
 
-
-    public List<Asignatura> getAsignaturas() {
-        return asignaturas;
+    public List<Grupo> getGrupos() {
+        return grupos;
     }
 
-    public void setAsignaturas(List<Asignatura> asignaturas) {
-        this.asignaturas = asignaturas;
+    public void setGrupos(List<Grupo> grupos) {
+        this.grupos = grupos;
     }
-
-    public void finalize() throws Throwable {
-        super.finalize();
-    }
-
 }
