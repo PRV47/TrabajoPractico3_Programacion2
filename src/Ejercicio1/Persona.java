@@ -4,7 +4,6 @@ public abstract class Persona {
     protected int dni;
     protected String nombre;
 
-    // Getters y Setters
     public int getDni() {
         return dni;
     }
